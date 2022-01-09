@@ -1,0 +1,170 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    font-family: "Open Sans";
+    color: #fff;
+}
+section{
+    background: url("./images/3.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2em 10px black;
+    background-color: rgba(128, 128, 128, 0.459);
+
+    
+}
+.mainhead{
+    color: black;
+    font-weight:bolder;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.control{
+    width: 100%;
+    margin: auto;
+    border: none;
+    color: black;
+}
+.control input{
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    color:#000;
+    background: #ddd;
+    outline: none;
+    border: none;
+    margin: 0.5em 0;
+    border-radius: 10px;
+
+}         
+.control .btn{
+    color: #fff;
+    text-transform: uppercase;
+    background: crimson;
+    opacity: .7;
+    transition:opacity .3s ease;
+    margin-top: 20px;
+}
+.btn:focus{
+    opacity: 1;
+}
+
+.label{
+    font-size: x-large;
+    text-align: left ;
+    font-weight:bold ;
+    
+}
+
+.logo{
+    margin-top: 5px;
+    height: 250px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} 
+ .chart-container {
+	
+    width: 100%;
+	height: 200px;
+    
+    
+}
+.card{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    
+}
+.bgColor{
+    background-color:#343435;
+    border-radius: 3%;
+    color: white;
+}
+body{
+    background-image: url("./images/3.jpg");
+     background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+
+}
+ .container{
+    background-color: rgba(128, 128, 128, 0.459);
+ }
+
+
+.msg{
+border-bottom: white;
+}
+
+
+table{
+    width:100%;
+    
+}
+/* .highcharts-figure, .highcharts-data-table table {
+	width: 200px;
+	margin: 0 auto;
+} */
+
+/* .highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 200px;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+} */
+
+
+.history{
+    margin-top: 10px;
+}
+.center{
+    text-align: center;
+}
+
+
+

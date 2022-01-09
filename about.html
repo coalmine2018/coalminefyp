@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoalMine CMS | About us</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="highcharts/highcharts.js"></script>
+  <script src="highcharts/highcharts-more.js"></script>
+  <script src="highcharts/solid-gauge.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCRv9RQSYQNuqF3IurCmS7B0umJVxdtUoY",
+      authDomain: "coalminefyp-6d357.firebaseapp.com",
+      databaseURL: "https://coalminefyp-6d357-default-rtdb.firebaseio.com",
+      projectId: "coalminefyp-6d357",
+      storageBucket: "coalminefyp-6d357.appspot.com",
+      messagingSenderId: "151626632375",
+      appId: "1:151626632375:web:e8a209624724ba040a5132",
+      measurementId: "G-18BMWTCTKP",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bgColor">
+    <div class="container-fluid" style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        ">
+      <h5 style="
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            margin-right: 146px;
+          ">
+        COAL-MINE SAFETY SYSTEM
+      </h5>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" style="margin-right: 70px">
+            <a class="nav-link" href="./home.html">HOME</a>
+          </li>
+          <li class="nav-item" style="margin-right: 60px">
+            <a class="nav-link" href="./history.html">HISTORY</a>
+          </li>
+          <li class="nav-item" style="margin-right: 60px">
+            <a class="nav-link active" aria-current="page" href="./about.html">ABOUT-US</a>
+          </li>
+          <li class="nav-item" style="margin-right: 60px">
+            <a class="nav-link" onclick="signOut()">LOGOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="row justify-content-center" style="background-color: rgba(0, 0, 0, 0.076)">
+      <div class="card bg-transparent col-lg-12">
+        <div>
+          <h1 style="color: beige; text-align: center; font-weight: bold">
+            <u>INTRODUCTION</u>
+          </h1>
+          <p style="color: beige; text-align: justify">
+            Our project “Coal Mine Control and Monitoring System” is based on
+            Internet of Things (IoT). It will help to monitor and control the
+            following physical parameters present inside the coal mine i.e.,
+            temperature, humidity, smoke, light i ntensity (control through
+            LDR), oxygen level and hazard gases (for example methane and
+            carbon mono-oxide). The concern authorities will monitor these
+            physical parameters through web and mobile application and these
+            parameters will also display on the LCD attached with the project
+            prototype installed inside the coal mine. In case of any emergency
+            situation (for example if the defined parameters will go up and
+            down) the system will generate the alarm and warn the labors to
+            move towards safety.
+          </p>
+        </div>
+        <div>
+          <h1 style="color: beige; text-align: center; font-weight: bold">
+            <u>PURPOSE & SCOPE</u>
+          </h1>
+          <p style="color: beige; text-align: justify">
+            The main purpose of our project is that we are going to design a
+            prototype for the safety of the labors who work in the coal mines
+            by detecting the hazard and poisonous gases presents inside the
+            mine. This will make the coal mine a safer place and the major
+            disaster preservation are also effectively solved through our
+            project. In recent years, the coal mine accidents have frequently
+            occurred. According to incomplete statistics, Pakistan's coal
+            imports production accounts for 70%, but the accident casualties
+            is 80%. It causes economic & human losses. Security problem has
+            become the key issues in the coal mine production. Accident
+            prevention is the focus of the current work in the coal mine. Coal
+            mine monitoring system is more and more important to realize the
+            environmental parameters such as hazard gases, temperature,
+            humidity, light intensity and so on. They play an important role
+            in coal mine safety production.
+          </p>
+        </div>
+        <div>
+          <h1 style="color: beige; text-align: center; font-weight: bold">
+            <u>MEET OUR TEAM</u>
+          </h1>
+          <div style="text-align: center">
+            <div class="card" style="width: 16rem; display: inline-block; margin: 5px;">
+              <img src="./images/saud.jpeg" style="height: 195px;" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                <table style="font-size: 15px; text-align: left; ">
+                  <tr>
+                    <td><b>Name :</b></td>
+                    <td>Syed Saud Bin Masood</td>
+                  </tr>
+                  <tr>
+                    <td><b>Email :</b></td>
+                    <td>Ce18-030@ssuet.edu.pk</td>
+                  </tr>
+                  <tr>
+                    <td><b>Contact :</b></td>
+                    <td>0307-2897204</td>
+                  </tr>
+                </table>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem; display: inline-block; margin: 5px;">
+              <img src="./images/Ahsan.jpg" style="height: 195px;" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                <table style="font-size: 15px; text-align: left; ">
+                  <tr>
+                    <td><b>Name :</b></td>
+                    <td>Ahsan Saeed </td>
+                  </tr>
+                  <tr>
+                    <td><b>Email :</b></td>
+                    <td>Ce18-028@ssuet.edu.pk</td>
+                  </tr>
+                  <tr>
+                    <td><b>Contact :</b></td>
+                    <td>0308-2209203</td>
+                  </tr>
+                </table>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem; display: inline-block; margin: 5px; ">
+              <img src="./images/waleed.jpeg" style="height: 195px;" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                <table style="font-size: 15px; text-align: left; ">
+                  <tr>
+                    <td><b>Name :</b></td>
+                    <td>Syed Walaed Bin Aman</td>
+                  </tr>
+                  <tr>
+                    <td><b>Email :</b></td>
+                    <td>Ce18-045@ssuet.edu.pk</td>
+                  </tr>
+                  <tr>
+                    <td><b>Contact :</b></td>
+                    <td>0303-2740402</td>
+                  </tr>
+                </table>
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem; display: inline-block; margin: 5px;">
+              <img src="./images/sallu.jpeg" style="height: 195px;" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                <table style="font-size: 15px; text-align: left; ">
+                  <tr>
+                    <td><b>Name :</b></td>
+                    <td>Muhammad Salman</td>
+                  </tr>
+                  <tr>
+                    <td><b>Email :</b></td>
+                    <td>Ce18-029@ssuet.edu.pk</td>
+                  </tr>
+                  <tr>
+                    <td><b>Contact :</b></td>
+                    <td>0308-2040209</td>
+                  </tr>
+                </table>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <br>
+          <h1 style="color: beige; text-align: center; font-weight: bold">
+            <u>VIDEOS</u>
+          </h1>
+          <div style="text-align: center">
+            <div class="card" style="width: 100%; height: 400px; display: inline-block">
+              <video controls style="width: 100%; height: 80%">
+                <source src="./videos/Pitch Deck.mp4" type="video/mp4" />
+              </video>
+              <div class="card-body">
+                <p class="card-text"><b>PITCH DECK</b></p>
+              </div>
+            </div>
+            <div class="card" style="width: 100%; height: 400px; display: inline-block">
+              <video controls style="width: 100%; height: 80%">
+                <source src="./videos/Project Demo.mp4" type="video/mp4" />
+              </video>
+              <div class="card-body">
+                <p class="card-text"><b>PROJECT DEMONSTRATION VIDEO</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="height: auto; background-color: #343435; text-align: center">
+    <div style="display: inline-block">
+      <ul style="margin-top: 2px; padding: 0rem">
+
+        <a style="display: inline-block" class="nav-link" href="./home.html">HOME</a><span>|</span>
+        <a style="display: inline-block" class="nav-link" href="./history.html">HISTORY</a><span>|</span>
+        <a style="display: inline-block" class="nav-link" href="./about.html">ABOUT</a><span>|</span>
+        <a style="display: inline-block" class="nav-link" onclick="signOut()">LOGOUT</a>
+      </ul>
+    </div>
+    <div>
+      <h6 style="color: white">CONTACT US</h6>
+      <p style="color: antiquewhite">
+        Gmail:
+        <a href="mailto:coalminec.m.s@gmail.com" target="_blank">coalminec.m.s@gmail.com</a>
+      </p>
+    </div>
+  </div>
+  <div class="container-fluid"
+    style=" height:auto; margin-top:-16px; background: #000;text-align: center; color: white">
+    &copy; Copyright 2022 Coal Mine Control And Monitoring System
+  </div>
+</body>
+<script src="logout.js"></script>
+
+</html>
